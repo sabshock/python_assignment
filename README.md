@@ -65,6 +65,7 @@ python -m pytest
         - You can use `unittest` or `pytest` for implementing test cases.
         - `Note`: Mock the [load_employee_rec_from_database()](src/general_example.py#L16) method while writing unit test for [fetch_emp_details()](src/general_example.py#L22) method.
     2. Complete the implementation of 3 test methods in [test_dynamodb_example.py](tests/test_dynamodb_example.py). Take a referece from the [test_s3_example.py](tests/test_s3_example.py)
+        - `moto` is the package being used for mocking boto3 api calls: http://docs.getmoto.org/en/latest/docs/getting_started.html
     3. Run the test cases. All test cases should pass.
     4. Generate the code coverage report.
         - More about code coverage:
