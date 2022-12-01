@@ -3,8 +3,8 @@ from src.tdd_example import TDDExample
 tdd_example_instance = TDDExample()
 
 def test_reverse_string():
-    text = 'foobar'
-    expected = 'raboof'
+    text = 'python'
+    expected = 'nohtyp'
 
     actual = tdd_example_instance.reverse_string(text)
 
@@ -20,14 +20,14 @@ def test_find_longest_word():
     assert expected == actual
 
 def test_reverse_list():
-    expected = [1, 2, 3, 4, 5]
-    actual = tdd_example_instance.reverse_list([5, 4, 3, 2, 1])
+    expected = [10,2,5,22,77]
+    actual = tdd_example_instance.reverse_list([77,22,5,2,10])
 
     assert expected == actual
 
 def test_count_digits():
     expected = 3
 
-    actual = tdd_example_instance.count_digits([1, 1, 1, 2, 3], 1)
+    actual = tdd_example_instance.count_digits([7, 1, 7, 2, 7,10,77], 7)
 
     assert expected == actual
