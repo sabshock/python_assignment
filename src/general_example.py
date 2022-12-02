@@ -3,7 +3,7 @@ from typing import Dict, List
 
     
 class GeneralExample():
-    def flatten_dictionary(content: Dict) -> List:
+    def flatten_dictionary(self,content: Dict) -> List:
         '''
         Example of this function call:
             flatten_dictionary({'key1': [3, 2, 1], 'key2': [42, 55, 10], 'key3': [0, 22]})
@@ -20,7 +20,7 @@ class GeneralExample():
 
 
     def fetch_emp_details(self):
-        db_record = self.load_employee_rec_from_database(self)
+        db_record = self.load_employee_rec_from_database()
 
         emp_details = {
             'empId': db_record[0],
